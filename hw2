@@ -1,0 +1,25 @@
+class Cat:
+    height = 0
+    name = 'Mars'
+    age = 7
+    happines = 100
+    tirednes = 0
+    comfort = 100
+
+
+    def eat(self):
+        self.happines += 10
+
+    def sleep(self):
+        self.tirednes -= 10
+        self.happines += 10
+        self.comfort += 25
+
+    def play(self):
+        self.tirednes += 10
+
+Cat1 = Cat()
+Cat2 = Cat()
+
+print("Cat s happines - ",Cat1.happines, 'Cat s tirednes - ',Cat1.tirednes, 'Cat s comfort - ',Cat1.comfort)
+print("Cat s happines - ",Cat2.happines, 'Cat s tirednes - ',Cat2.tirednes, 'Cat s comfort - ',Cat2.comfort)
